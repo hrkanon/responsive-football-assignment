@@ -1,0 +1,180 @@
+/*---------- 
+ Font 
+-----------*/
+/* font-weight 700 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+/* font-weight 400 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/*---------------
+ Utilities 
+ ---------------*/
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*---------------
+ Header Styles 
+ ---------------*/
+header {
+  display: flex;
+  background-color: #2d25a0;
+  height: 677px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header:hover .half-width img {
+  transform: scale(1.35);
+  transition: transform 1.5s ease-in-out;
+}
+.half-width {
+  width: 35%;
+}
+.half-width h1 {
+  color: #ffffff;
+  font-size: 64px;
+}
+.live {
+  background-color: #e02c6d;
+  padding: 10px 24px;
+  color: white;
+}
+.half-width img {
+  width: 556px;
+}
+/*---------------- 
+ Players Styles 
+ ----------------*/
+.players-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  gap: 27px 50px;
+}
+.player {
+  width: 330px;
+  height: 474px;
+  padding: 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img {
+  width: 100%;
+}
+.player h3 {
+  font-size: 28px;
+}
+.player p {
+  font-size: 16px;
+  font-weight: 400;
+}
+/*------------------ 
+Trophy Styles 
+-------------------*/
+.trophy-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+.trophy-section h1 {
+  font-size: 50px;
+}
+.trophies {
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  gap: 27px 50px;
+}
+.trophy {
+  width: 330px;
+  height: 474px;
+  padding: 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.trophy img {
+  height: 300px;
+  display: block;
+  margin: 5px auto;
+}
+.trophy-info {
+  text-align: center;
+}
+
+/*------------------
+Partners styles 
+--------------------*/
+.partners-section h1 {
+  font-size: 50px;
+  text-align: center;
+}
+.partners {
+  width: 1050px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners img {
+  width: 100%;
+}
+
+/*------------------ 
+Footer styles
+------------------- */
+footer {
+  height: 213px;
+  width: 483.87px;
+  font-size: 18px;
+  text-align: center;
+  margin: 50px auto 63px;
+}
+footer img {
+  width: 100%;
+}
+.fab {
+  font-size: 32px;
+  margin: 0 14px;
+  background-color: #e7e7e8;
+  border-radius: 50%;
+  padding: 10px;
+}
+/*------------------------
+ Responsive for Mobile 
+ -------------------------*/
+@media only screen and (max-width: 480px) {
+  header {
+    height: 695px;
+    width: 400px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .half-width {
+    padding: 16px;
+  }
+  .half-width h1 {
+    font-size: 36px;
+  }
+  .live {
+    width: 168px;
+    height: 44px;
+  }
+  .half-width img {
+    width: 329px;
+  }
+  .players-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .players {
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    width: 100%;
+    margin-bottom: 187px;
+  }
+}
