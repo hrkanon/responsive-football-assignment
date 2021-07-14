@@ -43,6 +43,9 @@ body {
 .live {
   background-color: #e02c6d;
   padding: 10px 24px;
+}
+.live a {
+  text-decoration: none;
   color: white;
 }
 .half-width img {
